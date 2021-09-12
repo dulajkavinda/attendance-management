@@ -132,7 +132,7 @@ export default function Admin() {
         </Toolbar>
       </AppBar>
       <div className="body_admin">
-        <div style={{ height: 500, width: "20%" }}>
+        <div style={{ height: 500, width: "25%" }}>
           <h3>Today</h3>
           <DataGrid rows={attendance} columns={columns} pageSize={7} />
         </div>
