@@ -96,14 +96,39 @@ export default function Admin() {
           <Typography variant="h6" className={classes_nav.title}>
             Attendance Management System
           </Typography>
-          <Link to="/add" style={{textDecoration:"none", color:"white"}}>
+          <Link to="/admin" style={{ textDecoration: "none", color: "white" }}>
+            <Button color="inherit">Home</Button>
+          </Link>
+          <Link to="/add" style={{ textDecoration: "none", color: "white" }}>
             <Button color="inherit">Add Student</Button>
           </Link>
-          <Button color="inherit">All Students</Button>
-          <Button color="inherit">View Past Records</Button>
-          <Button color="inherit">Information</Button>
-          <Button color="inherit">Contact Support</Button>
-          <Button color="inherit">Privacy</Button>
+          <Link
+            to="/students"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">All Students</Button>
+          </Link>
+          <Link
+            to="/records"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">View Past Records</Button>
+          </Link>
+          <Link to="/info" style={{ textDecoration: "none", color: "white" }}>
+            <Button color="inherit">Info</Button>
+          </Link>
+          <Link
+            to="/support"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">Contact Support</Button>
+          </Link>
+          <Link
+            to="/provacy"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">Privacy</Button>
+          </Link>
         </Toolbar>
       </AppBar>
       <div className="body_admin">

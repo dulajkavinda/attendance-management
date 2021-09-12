@@ -9,7 +9,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
-
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -45,7 +45,6 @@ export default function AddStudent() {
   const classes_nav = useStyles();
 
   return (
-    
     <div className="main_add">
       <AppBar position="static">
         <Toolbar>
@@ -60,15 +59,42 @@ export default function AddStudent() {
           <Typography variant="h6" className={classes_nav.title}>
             Attendance Management System
           </Typography>
-          <Button color="inherit">Add Student</Button>
-          <Button color="inherit">All Students</Button>
-          <Button color="inherit">View Past Records</Button>
-          <Button color="inherit">Information</Button>
-          <Button color="inherit">Contact Support</Button>
-          <Button color="inherit">Privacy</Button>
+          <Link to="/admin" style={{ textDecoration: "none", color: "white" }}>
+            <Button color="inherit">Home</Button>
+          </Link>
+          <Link to="/add" style={{ textDecoration: "none", color: "white" }}>
+            <Button color="inherit">Add Student</Button>
+          </Link>
+          <Link
+            to="/students"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">All Students</Button>
+          </Link>
+          <Link
+            to="/records"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">View Past Records</Button>
+          </Link>
+          <Link to="/info" style={{ textDecoration: "none", color: "white" }}>
+            <Button color="inherit">Info</Button>
+          </Link>
+          <Link
+            to="/support"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">Contact Support</Button>
+          </Link>
+          <Link
+            to="/provacy"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button color="inherit">Privacy</Button>
+          </Link>
         </Toolbar>
       </AppBar>
-      <h2 style={{marginTop:"100px"}}>add new student</h2>
+      <h2 style={{ marginTop: "100px" }}>add new student</h2>
       <div className="form">
         <TextField
           onChange={(e) => setid(e.target.value)}
@@ -88,7 +114,13 @@ export default function AddStudent() {
           label="Class"
           variant="outlined"
         />
-        <input onChange={(e) => {setfiles(e.target.files[0])}} multiple type="file" />
+        <input
+          onChange={(e) => {
+            setfiles(e.target.files[0]);
+          }}
+          multiple
+          type="file"
+        />
         <Button
           onClick={submit}
           style={{ width: "10%", marginTop: "10px" }}

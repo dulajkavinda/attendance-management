@@ -7,6 +7,7 @@ import Attendance from "./pages/Attendance";
 import Admin from "./pages/Admin";
 import AddStudent from "./pages/AddStudent";
 import Records from './pages/Records'
+import Students from './pages/Students'
 
 export default function App() {
   const [students, setStudents] = useState([]);
@@ -38,6 +39,9 @@ export default function App() {
           </Route>
           <Route exact path="/records">
             <Records />
+          </Route>
+          <Route exact path="/students">
+          {students.length > 0 ? <Students students={students} />: null} 
           </Route>
         </Switch>
       </div>

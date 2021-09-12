@@ -111,3 +111,33 @@ canvas{
   align-items: center;
   flex-direction: row
 }
+
+.main_records{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+.body_records {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+  justify-content: space-around;
+  flex-direction: row
+}
+
+.main_students {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column
+}
