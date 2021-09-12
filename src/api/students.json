@@ -1,0 +1,46 @@
+{
+    "users":[
+        {
+            "name":"Black Widow",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        },
+        {
+            "name":"Captain America",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        },
+        {
+            "name":"Captain Marvel",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        },
+        {
+            "name":"Hawkeye",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        },
+        {
+            "name":"Jim Rhodes",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        },
+        {
+            "name":"Thor",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        },
+        {
+            "name":"Tony Stark",
+            "class": "DBMS",
+            "id":"IT2636373",
+            "image": "http://localhost:5000/Dulaj%20Kavinda/1.jpg"
+        }
+    ]
+}
