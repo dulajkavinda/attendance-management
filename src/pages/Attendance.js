@@ -159,7 +159,7 @@ export default function Attendance(props) {
   const classes = useStyles();
   return (
     <div className="main">
-      <h1> attendance management system</h1>
+      <h1> attendance management system </h1>
       <div className="container" id="container">
         <div className="video_feed">
           <Webcam
@@ -181,6 +181,7 @@ export default function Attendance(props) {
         </div>
 
         <div className="result" id="result">
+          {loading ?? <p>loading</p>}
           {notFound && (
             <div>
               <h1>please try again</h1>

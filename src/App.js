@@ -6,6 +6,7 @@ import axios from "axios";
 import Attendance from "./pages/Attendance";
 import Admin from "./pages/Admin";
 import AddStudent from "./pages/AddStudent";
+import Records from './pages/Records'
 
 export default function App() {
   const [students, setStudents] = useState([]);
@@ -34,6 +35,9 @@ export default function App() {
           </Route>
           <Route exact path="/add">
             <AddStudent />
+          </Route>
+          <Route exact path="/records">
+            <Records />
           </Route>
         </Switch>
       </div>

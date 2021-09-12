@@ -66,7 +66,7 @@ canvas{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row
+  flex-direction: column
 }
 .main_add {
   margin: 0;
@@ -74,7 +74,6 @@ canvas{
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column
 }
@@ -87,7 +86,8 @@ canvas{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .side{
@@ -99,4 +99,15 @@ canvas{
 
 #outlined-basic {
   width: 300px;
+}
+
+.body_admin{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row
 }
